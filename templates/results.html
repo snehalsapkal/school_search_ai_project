@@ -1,0 +1,7 @@
+<h2>Recommended Schools</h2>
+<ul>
+  {% for index, row in schools.iterrows() %}
+    <li><strong>{{ row.name }}</strong> - {{ row.location }} ({{ row.board }}) - ⭐ {{ row.rating }}</li>
+  {% endfor %}
+</ul>
+<a href="/">Back</a>
